@@ -3,13 +3,13 @@ public class Vehicle {
     private int pricePerDay;
     private FuelType fuelType;
 
-    public Vehicle(int plateNumber, int pricePerDay, FuelType fuelType){
-        plateNumber = this.plateNumber;
-        pricePerDay = this.pricePerDay;
-        fuelType = this.fuelType;
+    public Vehicle(int plateNumber, int pricePerDay, FuelType fuelType) {
+        this.plateNumber = plateNumber;
+        this.pricePerDay = pricePerDay;
+        this.fuelType = fuelType;
     }
 
-// Getters
+    // Getters
     public int getPlateNumber() {
         return plateNumber;
     }
