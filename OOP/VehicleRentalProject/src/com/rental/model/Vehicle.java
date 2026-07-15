@@ -1,15 +1,33 @@
-public vehicle(){
+public class Vehicle {
     private int plateNumber;
     private int pricePerDay;
     private FuelType fuelType;
 
-    public vehicle(int plateNumber, int pricePerDay, FuelType fuelType){
+    public Vehicle(int plateNumber, int pricePerDay, FuelType fuelType){
         plateNumber = this.plateNumber;
         pricePerDay = this.pricePerDay;
-        fuelType = fuelType.fuelType;
+        fuelType = this.fuelType;
     }
 
-    public string toString(){
-        
+// Getters
+    public int getPlateNumber() {
+        return plateNumber;
+    }
+
+    public int getPricePerDay() {
+        return pricePerDay;
+    }
+
+    public FuelType getFuelType() {
+        return fuelType;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "plateNumber=" + plateNumber +
+                ", pricePerDay=" + pricePerDay +
+                ", fuelType=" + fuelType +
+                '}';
     }
 }
